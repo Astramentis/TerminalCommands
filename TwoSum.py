@@ -68,7 +68,7 @@ if __name__ == "__main__":
 
     #Case 3
     #nums = range[0,101]
-    #target = 22
+    #target = 24
     #start_time = time.time() 
     #print(sol.findPair(nums, target))  # Output should be (8, 2) or (7, 3)
-    #end_time = time.time()
+    #end_time = time.time()  
