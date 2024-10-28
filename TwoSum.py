@@ -43,31 +43,32 @@ if __name__ == "__main__":
     print('case1')
     nums = [8, 7, 2, 5, 3, 1]
     target = 10
-    start_time = time.time()  # Start the timer
+    start_time = time.time()
     print(sol.findPair(nums, target))  # Output should be (8, 2) or (7, 3)
-    end_time = time.time()  # End the timer
+    end_time = time.time()
+    print("runtime: ", end_time-start_time)
 
     #Case 2
     print('case2')
     nums = [5, 2, 6, 8, 1, 9]
     target = 12
-    start_time = time.time()  # Start the timer
+    start_time = time.time() 
     print(sol.findPair(nums, target))  # Output should be (8, 2) or (7, 3)
-    end_time = time.time()  # End the timer
+    end_time = time.time() 
     print("runtime: ", end_time-start_time)
 
-    #Case 2
+    #Case 3
     print('case3')
-    nums = [1, 1, 1, 8, 1, 9]
+    nums = [0, 1, 1, 8, 1, 9]
     target = 2
-    start_time = time.time()  # Start the timer
+    start_time = time.time()
     print(sol.findPair(nums, target))  # Output should be (8, 2) or (7, 3)
-    end_time = time.time()  # End the timer
+    end_time = time.time()
     print("runtime: ", end_time-start_time)
 
     #Case 3
     #nums = range[0,101]
-    #target = 24
-    #start_time = time.time()  # Start the timer
+    #target = 22
+    #start_time = time.time() 
     #print(sol.findPair(nums, target))  # Output should be (8, 2) or (7, 3)
-    #end_time = time.time()  # End the timer
+    #end_time = time.time()
