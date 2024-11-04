@@ -17,7 +17,8 @@ class Solution:
                 for i in range(0, zeroes):
                     new_nums.append(0)
                 print("finished: ", new_nums)
-                nums = new_nums
+                nums.clear()
+                nums.extend(new_nums)
                 return(nums)
 
 # Testing the function
