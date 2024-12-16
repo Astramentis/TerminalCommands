@@ -27,30 +27,34 @@ import time
 
 
 class Solution:
-	def findPair(self, nums: List[int]) -> Tuple[int]:
-		maximum = -99
-		for i in nums:
-			lower_b = i
-			upper_b = 0 - i
-			for i in nums: 
-				lower_b = lower_b + i
-				print(lower_b)
-				if lower_b + i > maximum:
-					maximum = lower_b + i
-					upper_b = i
-				else:
-					pass
-		print(lower_b,upper_b)
-		return((lower_b,upper_b))
+    def findPair(self, nums: List[int]) -> Tuple[int]:
+        next_largest = -999
+        to_beat = -2**63
+        largest_num = -999
+        for i in nums:
+            current = i
+            print(i)
+            for i in nums:
+                if current == i:
+                    break
+                elif i > largest_num:
+                    largest_num = i
+                elif i > next_largest:
+                    next_largest = i
+                    to_beat = i
+                    print(next_largest)
+                else:
+                    pass
+        return((next_largest,largest_num))
 
 
 if __name__ == "__main__":
     sol = Solution()
 
     #Case 1
-    print('case 1 solution: passed')
+    print("case 1 run:")
     nums = [-4, 3, 2, 7, -5]
-    target = (-10, -3) or (-3, -10) or (5, 6) or (6, 5)
+    target = (3, 7) or (7, 3)
     start_time = time.time()
     print(sol.findPair(nums))  # Output should be (8, 2) or (7, 3)
     end_time = time.time()
