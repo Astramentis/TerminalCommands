@@ -64,10 +64,9 @@ class Solution:
         elif max_negative > max_positive: 
             return((next_largest_neg,largest_neg))
         else:
-            return((next_largest_neg,largest_neg))
-        
+            return((next_largest_neg,largest_neg))     
 
-class Solution2:
+class Solution2: #this one is big shit
     def findPair(self, nums: List[int]) -> Tuple[int]:
         next_largest = nums[-1]
         largest_num = nums[0]
@@ -113,7 +112,7 @@ if __name__ == "__main__":
         print("Test failed.", "Solutions: ", target)
         print("invalid solution", (solution[0:len(solution)]))  # Return full solutions
         print("\n")
-'''
+
     #Case 2
     print("Case 2:")
     nums = [-4, 3, 2, 7, -5]
@@ -149,5 +148,3 @@ if __name__ == "__main__":
         print("Test failed")
         print((solution[0:len(solution)]))  # Return full solutions
         print("\n")
-
-'''
