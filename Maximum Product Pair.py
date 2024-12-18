@@ -26,14 +26,8 @@ class Solution:
         largest_num = 0
         largest_neg = 0
         next_largest_neg = 0
-        #counter = 0
-        #for i in nums:
-            #compare = nums[counter]
         for i in nums:
-            #if i == nums[0]:
-                #pass
             if i < 0:
-                print('negative found, ',i)
                 if i < largest_neg:
                     next_largest_neg = largest_neg 
                     largest_neg = i
@@ -42,7 +36,6 @@ class Solution:
                 else:
                     pass
             elif i > 0:
-                print('positive found: ', i)
                 if i > largest_num:
                     next_largest = largest_num
                     largest_num = i
@@ -52,43 +45,14 @@ class Solution:
                 pass 
         max_positive = next_largest * largest_num
         max_negative = largest_neg * next_largest_neg
-        print(max_negative, "max negative")
-        print(max_positive, "max positive")
-
         if len(nums) <= 1:
             return(())
-        #elif len(nums) == 2:
-            #return((nums[0],nums[1]))
+        elif len(nums) == 2:
+            return((nums[0],nums[1]))
         elif max_positive > max_negative:
             return((next_largest, largest_num))
-        elif max_negative > max_positive: 
-            return((next_largest_neg,largest_neg))
         else:
             return((next_largest_neg,largest_neg))     
-
-class Solution2: #this one is big shit
-    def findPair(self, nums: List[int]) -> Tuple[int]:
-        next_largest = nums[-1]
-        largest_num = nums[0]
-        #from_0 = abs(next_largest) + abs(largest_num)
-        for i in nums:
-            current = i
-            for i in nums:
-                if current == i:
-                    #print(i,"break")
-                    i = next_largest
-                    break
-                elif i > largest_num:
-                    largest_num = i
-                elif i > next_largest:
-                    next_largest = i
-                else:
-                    pass
-        if len(nums) <= 1:
-            return(())
-        if len(nums) <= 2:
-            return((nums[0],nums[1]))
-        return((next_largest,largest_num))
 
 if __name__ == "__main__":
     sol = Solution()
