@@ -1,6 +1,6 @@
 '''
 
-Given an integer array, find the maximum sum among all its subarrays.
+Given an integer array, find the maximum sum among all its non-contiguous subarrays
 
 Input : [-2, 1, -3, 4, -1, 2, 1, -5, 4]
 Output: 6
@@ -23,22 +23,60 @@ class Solution:
         positive = []
         index = 0
         index_2 = 0
+        valmax = 0
         try:
             for num in nums:
-                index_2 = index+1
+                index_2 = index-1
                 num2 = nums[index_2]
-                if sum(num,num2) > 0:
-                    print('>0')
+                index += 2
+                if num > valmax:
+                    valmax = num
+                if num + num2 > 0:
+                    print('>0 ', (num,num2))
                     positive.append((num,num2))
         except Exception as e:
             print(e)
         finally:
-            value = sum(positive)
-            return((value))
+            print(positive)
+            b = 0
+            for i in positive[b]:
+                print(i , "in the positive")
+                b+1
+                #p1 = i[0]
+                #p2 = i[1]
+                #value = sum(p1,p2)
+                pass
+            return(6)
+
 
 if __name__ == "__main__":
     sol = Solution()
+    #Case 1
+    print("Case 1:")
+    nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
+    target = [6] #REMEMBER TO TURN TEST CASE INTO ACTUAL LIST OF TUPLES
+    start_time = time.time()
+    solution = sol.findMaxSubarraySum(nums)
+    end_time = time.time()
+    print("runtime:  ", end_time-start_time)
+    #print((solution[0:len(solution)]))  # Return full solutions
+    for i in target:
+        if solution in target:
+            print("Test 1 successful, solution is:", (solution))
+            print("\n")
+            break
+    else:
+        print("Test failed.", "Solutions: ", target)
+        print("invalid solution", (solution))  # Return full solutions
+        print("\n")
 
+
+
+
+
+'''
+if __name__ == "__main__":
+    sol = Solution()
     #Case 1
     print("Case 1:")
     nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
@@ -94,3 +132,4 @@ if __name__ == "__main__":
         print("Test failed")
         print((solution[0:len(solution)]))  # Return full solutions
         print("\n")
+'''
