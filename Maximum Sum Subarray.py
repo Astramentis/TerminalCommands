@@ -1,5 +1,4 @@
 '''
-
 Given an integer array, find the maximum sum among all its subarrays.
 
 Input : [-2, 1, -3, 4, -1, 2, 1, -5, 4]
@@ -18,10 +17,12 @@ Explanation: The maximum sum subarray is [2, -1, 2, 1, 6] or [6, 4] or [2, -1, 2
 from typing import List, Tuple
 import time
 
-class Solution:
-    def findMaxSubarraySum(self, nums: List[int]) -> int:
+def Solution(self, nums: List[int]) -> int:
         positive = []
         for num in nums:
+            if num > 0: 
+                positive.append(num)
+                print(positive)
             pass
         return
 
