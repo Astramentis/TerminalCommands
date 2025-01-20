@@ -1,4 +1,5 @@
 '''
+
 Given an integer array, find the maximum sum among all its subarrays.
 
 Input : [-2, 1, -3, 4, -1, 2, 1, -5, 4]
@@ -17,14 +18,23 @@ Explanation: The maximum sum subarray is [2, -1, 2, 1, 6] or [6, 4] or [2, -1, 2
 from typing import List, Tuple
 import time
 
-def Solution(self, nums: List[int]) -> int:
+class Solution:
+    def findMaxSubarraySum(self, nums: List[int]) -> int:
         positive = []
-        for num in nums:
-            if num > 0: 
-                positive.append(num)
-                print(positive)
-            pass
-        return
+        index = 0
+        index_2 = 0
+        try:
+            for num in nums:
+                index_2 = index+1
+                num2 = nums[index_2]
+                if sum(num,num2) > 0:
+                    print('>0')
+                    positive.append((num,num2))
+        except Exception as e:
+            print(e)
+        finally:
+            value = sum(positive)
+            return((value))
 
 if __name__ == "__main__":
     sol = Solution()
@@ -32,9 +42,9 @@ if __name__ == "__main__":
     #Case 1
     print("Case 1:")
     nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
-    target = [6] #REMEMBER TO TURN TEST CASE INTO ACTUAL LIST OF TUPLES
+    target = [(6)] #REMEMBER TO TURN TEST CASE INTO ACTUAL LIST OF TUPLES
     start_time = time.time()
-    solution = sol.findPair(nums)  # Output should be (-10, -3) or (-3, -10) or (5, 6) or (6, 5)
+    solution = sol.findMaxSubarraySum(nums)  # Output should be (-10, -3) or (-3, -10) or (5, 6) or (6, 5)
     end_time = time.time()
     print("runtime:  ", end_time-start_time)
     #print((solution[0:len(solution)]))  # Return full solutions
@@ -54,7 +64,7 @@ if __name__ == "__main__":
     nums = [-7, -3, -2, -4]
     target = [-2]
     start_time = time.time()
-    solution = sol.findPair(nums)  # Output should be (8, 2) or (7, 3)
+    solution = sol.findMaxSubarraySum(nums)  # Output should be (8, 2) or (7, 3)
     end_time = time.time()
     print("runtime:  ", end_time-start_time)
     for i in target:
@@ -72,7 +82,7 @@ if __name__ == "__main__":
     nums = [-2, 2, -1, 2, 1, 6, -10, 6, 4, -8]
     target = [10]
     start_time = time.time()
-    solution = sol.findPair(nums)  # Output should be ()
+    solution = sol.findMaxSubarraySum(nums)  # Output should be ()
     end_time = time.time()
     print("runtime:  ", end_time-start_time)
     for i in target:
