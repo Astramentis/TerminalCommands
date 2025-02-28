@@ -89,9 +89,9 @@ I have no intention of continuing with Tkinter and now that I've done a rough dr
 
 **Unit tests?**
 
-This application is profoundly untestable in the ways that actually matter. Unit tests are not only not appropriate, they would have been a huge waste of time at all but 1 point in making this program, especially since it was an exploratory project. 
+Unit tests were not appropriate for solving issues that extended beyond basic logic, and would have been a poor use of time. Considering this was an exploratory project, full regression and compatibility testing was the priority. 
 
 **How long did this take?**
 
-This was started in Nov 2024 up to Feb 2025, with significant time spent neglecting it or distracted. In hour estimates I'd say 40 or so hours, most of it resolving bugs with imported code or working around constraints native to Tkinter. The application logic itself is simple by it's very nature, hence my desire to rewrite it in a more apporpriate framework. 
+This was started in Nov 2024 up to Feb 02 2025, as an after-work project. Approximately 40 working hours, most of it resolving bugs with imported code or working around constraints native to Tkinter. The application logic itself is simple by it's very nature, hence my desire to rewrite it in a more apporpriate framework. SQLite as an alternative to I/O, and the WAL enabled is more than enought to store and access state/session data.
 
