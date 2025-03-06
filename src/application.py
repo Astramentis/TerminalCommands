@@ -76,7 +76,7 @@ def init():
 
 def audio_threaded(num):
     #this is trivial to expand for user designated audio later
-    # - has to be threadsafe because ctinkter/tkinter already breaks execution order - reffer to sleep late execution bug
+    # - has to be threadsafe because ctinkter/tkinter already breaks execution order - refer to sleep late execution bug
     # - playsound might break on windows 11/ARM, I refuse to install windows 11 to find out
     def bad_sound():
         thread = Thread(playsound('src/sounds/bad_sound.wav'))
