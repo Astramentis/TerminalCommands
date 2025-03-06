@@ -24,32 +24,40 @@ The Major System instead ties a number to (a) consonant sound and allowing those
 |   9   |      B, P      |  Pin, Bowl, Boat  |
 
 3.1415 → MTRTL → MOTOR OIL 
+
 345 → MRL → "Moral"
-This is a requirement for doing mental arithmetic at a reasonable speed, and as far as I'm aware - no decent tool exists to make learning this as frictionless as possible.
+
+This is a requirement for doing mental arithmetic at a reasonable speed, and as far as I'm aware - no decent tool exists to make learning this extremely boring material as frictionless as possible.
 
 ### How to use this application: 
 
-Install dependencies - branch readme for setup instructions 
-Run application.py
+Install dependencies - see [previous readme](https://github.com/Astramentis/TerminalCommands/blob/Interview-Publish/README.md) for setup instructions 
+
+```python3 application.py```
 
 Place cursor in input field at the bottom left and type in numbers. 
+
 Each 6th digit will automatically be checked for validity and inserted if valid, removed if not. 
+
 Click the HINT button for the letter sounds, click HINT again for a full word/phrase. 
+
 Click RETRY to clear history and start from 3.14.
+
 Click RESET to completely restart the entire application (RESET is mostly for me to test code changes quickly because hot reload doesn't exist with tkinter or ctkinter, one of many problems)
 
-Note on hints: hints present in this version were generated via OpenAI's 4.0 - past the first handful they have a variety of small errors in using consnants where they shouldn't to construct complete words. LLM's have more complete internal models of the written word, but the actual pronunciation or 'sound' is outside their understanding (which is obvious when you think about it, but might be an interesting benchmark/proxy for reasoning in LLMs). 
+IMPORTANT NOTE ABOUT HINTS: hints present in this version were generated via OpenAI's 4.0 - past the first handful they have a variety of errors using consnants where they shouldn't. LLM's have more complete internal models of the written word, but the actual pronunciation or 'sound' is outside their understanding (which is obvious when you think about it, but might be an interesting benchmark/proxy for reasoning in LLMs). 
 
 MVP (complete as of 02/06/2025 - ie branch):
+
 - Load application 
 	- load digits of pi
 	- accept text input
 	- progress in 6 digit chunks
-	- hints for memorizing digits/Major System display
+	- hints for memorizing digits/Major System display (not present in this version)
 
 ---
 
-Made with python and customTinker - https://github.com/TomSchimansky/CustomTkinter
+Made almost entirely with python and customTinker - https://github.com/TomSchimansky/CustomTkinter
 Font credit to [Daniel Linssen](https://daniellinssen.games) -  - https://managore.itch.io/m5x7
 
 Feature list:
