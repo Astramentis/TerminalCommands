@@ -35,11 +35,11 @@ Install dependencies - see [previous readme](https://github.com/Astramentis/Term
 
 1. Place cursor in input field at the bottom left and type in numbers. 
 
-2a. Each 6th digit will automatically be checked for validity and inserted if valid, removed if not. 
+2. Each 6th digit will automatically be checked for validity and inserted if valid, removed if not. 
 
-2b. Click the HINT button for the letter sounds, click HINT again for a full word/phrase. 
+3. Click the HINT button for the letter sounds, click HINT again for a full word/phrase. 
 
-3. Click RETRY to clear history and start from 3.14.
+4. Click RETRY to clear history and start from 3.14.
 
 _Click RESET to completely restart the entire application_
 
