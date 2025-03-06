@@ -8,7 +8,7 @@ Humans have a consistent recall limit of six to seven numbers in working memory.
 
 The common expectation is to translate a number into an "idea": instead of "3," you think "three musketeers," but this simply takes too long, still has fungibility, and is still tied to the number itself.
 
-The Major System instead ties a number to (a) consonant sound and allowing those consonants to be used with vowels and semi-vowels to construct words, phrases, or familiar sounds that can be encoded and decoded quickly and consistently. 
+The Major System instead ties a number to consonant sounds and allowing those consonants to be used with vowels and semi-vowels to construct words, phrases, or familiar sounds that can be encoded and decoded quickly and consistently.
 
 | Digit |     Sound      |     Examples      |
 | :---: | :------------: | :---------------: |
@@ -25,29 +25,29 @@ The Major System instead ties a number to (a) consonant sound and allowing those
 
 3.1415 → MTRTL → MOTOR OIL 
 
-345 → MRL → "Moral"
+345 → MRL → MORAL
 
-This is a requirement for doing mental arithmetic at a reasonable speed, and as far as I'm aware - no decent tool exists to make learning this extremely boring material as frictionless as possible.
+This is a requirement for memorizing your moms credit card to buy Runescape membership (just checking if you're awake) or doing mental arithmetic at a reasonable speed, and as far as I'm aware - no decent tool exists to make learning this extremely boring material as frictionless as possible.
 
 ### How to use this application: 
 
-Install dependencies - see [previous readme](https://github.com/Astramentis/TerminalCommands/blob/Interview-Publish/README.md) for setup instructions 
+Install dependencies - see [previous readme](https://github.com/Astramentis/TerminalCommands/blob/Interview-Publish/README.md) for setup instructions and run ```python3 application.py```
 
-```python3 application.py```
+1. Place cursor in input field at the bottom left and type in numbers. 
 
-Place cursor in input field at the bottom left and type in numbers. 
+2a. Each 6th digit will automatically be checked for validity and inserted if valid, removed if not. 
 
-Each 6th digit will automatically be checked for validity and inserted if valid, removed if not. 
+2b. Click the HINT button for the letter sounds, click HINT again for a full word/phrase. 
 
-Click the HINT button for the letter sounds, click HINT again for a full word/phrase. 
+3. Click RETRY to clear history and start from 3.14.
 
-Click RETRY to clear history and start from 3.14.
+_Click RESET to completely restart the entire application_
 
-Click RESET to completely restart the entire application (RESET is mostly for me to test code changes quickly because hot reload doesn't exist with tkinter or ctkinter, one of many problems)
+_(RESET was mostly for me to test code quickly because hot reload doesn't exist with tkinter or ctkinter, one of MANY problems)_
 
-IMPORTANT NOTE ABOUT HINTS: hints present in this version were generated via OpenAI's 4.0 - past the first handful they have a variety of errors using consnants where they shouldn't. LLM's have more complete internal models of the written word, but the actual pronunciation or 'sound' is outside their understanding (which is obvious when you think about it, but might be an interesting benchmark/proxy for reasoning in LLMs). 
+IMPORTANT WARNING ON HINTS: hints present in this version were generated via OpenAI's 4.0 - past the first handful they have a variety of errors using consnants where they shouldn't. LLM's have more complete internal models of the written word, but the actual pronunciation or 'sound' is outside their understanding (which is obvious when you think about it, but might be an interesting benchmark/proxy for reasoning in LLMs). 
 
-MVP (complete as of 02/06/2025 - ie branch):
+MVP (complete as of 02/06/2025 - this branch):
 
 - Load application 
 	- load digits of pi
@@ -75,9 +75,9 @@ Feature list:
 - timed stats for 200 digits of pi 
 
 Nice to have:
-- BladeRunner 2049 mode
+- BladeRunner 2049 mode 
 - stats on failure/failure analysis
 - chimp game versus battle royale (https://humanbenchmark.com/tests/chimp) 
 - progress graph
 - audio selection for success/failure sounds and weights and condition settings
-- colored text & text animation
+- colored text & text animation (not possible with this framework)
