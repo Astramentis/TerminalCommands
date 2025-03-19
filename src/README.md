@@ -1,6 +1,10 @@
 ## 200 DIGITS OF PI
 
-This application exists to teach memorization with the major system through digits of pi, and an exploratory project to determine if Tkinter is a decent framework for building applications (it's not). 
+This application exists to teach memorization with the major system through digits of pi, and an exploratory project to determine if Tkinter is a decent framework for building applications (it's not).
+
+Made with python and [cTinker](https://github.com/TomSchimansky/CustomTkinter) 
+
+[Font](https://managore.itch.io/m5x7) credit to [Daniel Linssen](https://daniellinssen.games) -- 
 
 ### A primer on the Major System:
 
@@ -56,9 +60,6 @@ MVP (complete as of 02/06/2025 - this branch):
 	- hints for memorizing digits/Major System display (not present in this version)
 
 ---
-
-Made almost entirely with python and customTinker - https://github.com/TomSchimansky/CustomTkinter
-Font credit to [Daniel Linssen](https://daniellinssen.games) -  - https://managore.itch.io/m5x7
 
 Feature list:
 - Keybinds
