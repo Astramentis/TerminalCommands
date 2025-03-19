@@ -4,7 +4,7 @@ This application exists to teach memorization with the major system through digi
 
 Made with python and [cTinker](https://github.com/TomSchimansky/CustomTkinter) 
 
-[Font](https://managore.itch.io/m5x7) credit to [Daniel Linssen](https://daniellinssen.games) -- 
+[Font](https://managore.itch.io/m5x7) credit to [Daniel Linssen](https://daniellinssen.games)
 
 ### A primer on the Major System:
 
