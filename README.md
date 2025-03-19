@@ -84,7 +84,7 @@ _Note: do not put the file paths in quotes, you will get an error_
 
 **Why is this unfinished?**
 
-I have a mostly complete (for my purposes) version with Tkinter for my personal use, but intend to rewrite the project in C and Raylib. Raylib is more suited to my needs and comes with features I actually need like hot-reloads and being threadsafe. This branch is for an interviewer that insists on a "take-home project". Request a feature to be implemented and I will implement it (if I haven't already), with an invoice depending on how large the feature is.  
+I have a mostly complete (for my purposes) version with Tkinter for my personal use, but intend to rewrite the project in C and Raylib. Raylib is more suited to my needs and comes with features I actually need like hot-reloads and being threadsafe. This branch is for an interviewer that insists on a "take-home project", or would prefer a project to discuss as a 'drill down' to see why I worked on this and what the limitations are, or what caused me to change course from using this python library.  
 
 **Unit tests?**
 
