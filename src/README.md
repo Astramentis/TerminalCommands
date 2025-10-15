@@ -63,7 +63,7 @@ _(RESET was mostly for me to test code quickly because hot reload doesn't exist 
 
 ---
 
-Feature list:
+Future Features:
 - Keybinds
 - User input bindings
 - Profiles
@@ -75,9 +75,9 @@ Feature list:
 - phone number memorizer 
 - number > read passage of book > recall number to further test mid-long term memorization
 
-Wacky future ideas:
-- BladeRunner 2049 mode (https://youtu.be/ZRcpnM26nJM?t=23)
-- chimp game versus battle royale (https://humanbenchmark.com/tests/chimp)
+Wacky ideas:
+- BladeRunner 2049 mode (see https://youtu.be/ZRcpnM26nJM?t=23)
+- Battle Royale mode (https://humanbenchmark.com/tests/chimp)
 
 
 ## Credits:
