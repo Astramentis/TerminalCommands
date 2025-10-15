@@ -27,7 +27,7 @@ The Major System ties a number to consonant sounds and allows those consonants t
 
 345 → MRL → MORAL
 
-This is a requirement for memorizing your mom's credit card to buy Runescape membership (just checking if you're awake) or doing mental arithmetic at a reasonable speed, and as far as I'm aware - no decent tool exists to make learning this extremely boring material as frictionless as possible.
+This is a requirement for memorizing your mom's credit card to buy Runescape membership (just checking if you're awake) or doing mental arithmetic at a reasonable speed, and as far as I'm aware - no tool exists to make learning this extremely boring material as frictionless as possible.
 
 ---
 
